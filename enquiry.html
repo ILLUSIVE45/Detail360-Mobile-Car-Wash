@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a mobile car wash in Pretoria West. Fill in the Detail360 online booking form with your address, vehicle type and preferred time slot.">
+  <title>Book Now | Detail360 Mobile Car Wash</title>
+  <meta name="description" content="Mobile car wash in Pretoria West.">
+<meta name="keywords" content="car wash, mobile car wash, Pretoria West">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <p><strong><a href="index.html">Detail360 Mobile Car Wash</a></strong></p>
+    <p>We bring the shine to you.</p>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services &amp; Prices</a></li>
+        <li><a href="enquiry.html" aria-current="page">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <main>
+
+    <h1>Book Your Wash</h1>
+
+    <p>
+      Fill in the short form below and we will confirm your booking by
+      WhatsApp or phone call. The form is open 24 hours a day, so you can book
+      even when we are closed.
+    </p>
+
+    <p>Fields marked with an asterisk (*) are required.</p>
+    <form action="#" method="post">
+
+      <fieldset>
+
+        <legend>1. Your Details</legend>
+
+        <p>
+          <label for="fullname">Full name *</label><br>
+          <input type="text" id="fullname" name="fullname" required>
+        </p>
+
+        <p>
+          <label for="phone">Cell phone number *</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="082 000 0000" required>
+        </p>
+
+        <p>
+          <label for="email">Email address</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </p>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>2. Where Should We Come To?</legend>
+
+        <p>
+          <label for="address">Street address, complex and unit number *</label><br>
+          <input type="text" id="address" name="address" placeholder="12 Church Street, Sunrise Flats, Unit 4B" required>
+        </p>
+
+        <p>
+          <label for="suburb">Suburb *</label><br>
+          <select id="suburb" name="suburb" required>
+            <option value="" disabled selected>Choose your suburb</option>
+            <option value="pretoria-west">Pretoria West</option>
+            <option value="danville">Danville</option>
+            <option value="elandspoort">Elandspoort</option>
+            <option value="kwaggasrand">Kwaggasrand</option>
+            <option value="west-park">West Park</option>
+            <option value="philip-nel-park">Philip Nel Park</option>
+            <option value="lotus-gardens">Lotus Gardens</option>
+            <option value="proclamation-hill">Proclamation Hill</option>
+            <option value="hercules">Hercules</option>
+            <option value="other">Other (we will confirm if we can travel there)</option>
+          </select>
+        </p>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>3. Your Vehicle and Service</legend>
+
+        <p>
+          <label for="vehicle">Vehicle make and model</label><br>
+          <input type="text" id="vehicle" name="vehicle" placeholder="VW Polo Vivo">
+        </p>
+
+        <fieldset>
+          <legend>Vehicle size *</legend>
+
+          <p>
+            <input type="radio" id="size-small" name="vehicletype" value="small" required>
+            <label for="size-small">Small car &ndash; hatchback or sedan (R79,99)</label>
+          </p>
+
+          <p>
+            <input type="radio" id="size-big" name="vehicletype" value="big">
+            <label for="size-big">Big car &ndash; SUV, bakkie or double cab (R99,99)</label>
+          </p>
+        </fieldset>
+
+        <p>  
+        <label for="package">Which package do you want? *</label><br>
+          <select id="package" name="package" required>
+            <option value="" disabled selected>Choose a package</option>
+
+            <optgroup label="Standard washes">
+              <option value="wash-small">Small car wash &ndash; R79,99</option>
+              <option value="wash-big">Big car wash &ndash; R99,99</option>
+              <option value="polish-wax">Polishing and waxing &ndash; R199,99</option>
+            </optgroup>
+
+            <optgroup label="Additional services">
+              <option value="valet">Valet &ndash; R249,99</option>
+              <option value="deep-interior">Deep interior clean &ndash; from R599,99</option>
+            </optgroup>
+          </select>
+        </p>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>4. When Suits You?</legend>
+
+        <p>
+          <label for="date">Preferred date *</label><br>
+          <input type="date" id="date" name="date" min="2026-01-01" required>
+        </p>
+
+        <p>
+          <label for="timeslot">Preferred time slot *</label><br>
+          <select id="timeslot" name="timeslot" required>
+            <option value="" disabled selected>Choose a time slot</option>
+            <option value="08-10">Morning: 08:00 &ndash; 10:00</option>
+            <option value="10-12">Mid-morning: 10:00 &ndash; 12:00</option>
+            <option value="12-14">Early afternoon: 12:00 &ndash; 14:00</option>
+            <option value="14-16">Afternoon: 14:00 &ndash; 16:00</option>
+            <option value="16-18">Late afternoon: 16:00 &ndash; 18:00</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="notes">Anything else we should know?</label><br>
+          <textarea id="notes" name="notes" rows="4" cols="40"
+                    placeholder="For example: the car is in basement parking bay B12, or please call me at the gate."></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="whatsapp-ok" name="whatsapp-ok" value="yes">
+          <label for="whatsapp-ok">Yes, you may confirm my booking on WhatsApp.</label>
+        </p>
+
+      </fieldset>
+
+      <p>
+        <button type="submit">Send My Booking Request</button>
+        <button type="reset">Clear the Form</button>
+      </p>
+
+    </form>
+
+    <section>
+      <h2>What Happens Next?</h2>
+      <ol>
+        <li>We receive your request and check that the time slot is open.</li>
+        <li>We confirm with you by WhatsApp or phone, usually within one hour during business hours.</li>
+        <li>We arrive at your address inside your chosen time slot.</li>
+      </ol>
+      <p>
+        In a hurry? You can also
+        <a href="https://wa.me/0608206375">message us directly on WhatsApp</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <h2>Get In Touch</h2>
+
+    <ul>
+      <li>Phone: <a href="tel:+27125360898">0125360898</a></li>
+      <li>WhatsApp: <a href="https://wa.me/0608206375">Chat to us on WhatsApp</a></li>
+      <li>Email: <a href="mailto:info@detail360.co.za">info@detail360.co.za</a></li>
+      <li>Service area: Pretoria West and surrounding suburbs</li>
+    </ul>
+
+    <p><small>&copy; 2026 Detail360 Mobile Car Wash. All rights reserved.</small></p>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
